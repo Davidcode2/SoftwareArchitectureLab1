@@ -53,12 +53,16 @@ only provide a REST API.
 # Node.js
 
 Javascript runtime environment
-Node.js is an asynchronous event driven engine 
+Node.js is an asynchronous event driven engine. 
+Includes useful functionality out of the box like HTTP.
+Can be extended using npm.
 
 # MongoDB
 
 MongoDB does not store data in rows and columns but instead stores data in json documents.
 What is a schema?
+
+MongoDB places itself between Key-Value Stores (Redis) and Relational Databases
 
 ## MongoDB Atlas
 
@@ -100,6 +104,42 @@ a server or the frontend. see 'Aggregation Framework'.
 REST Apis enable developers to create apps that make use of many different services
 thus greatly enhancing what any one application can do.
 It breaks down the silos that applications once where.
+
+# Micro Frontends
+
+extends the concept of micro services to the frontend world.
+With micro frontends each team is responsible for a feature and does not build
+just the frontend for that feature and later tries to integrate it with
+the backend that was built by another team, but is responsible for the 
+entire vertical stack for this feature. This means that the feature is a 
+standalone that could be reused in another app without much hassle.
+
+It extends the idea of microservices where teams are responsible for a feature 
+with the backend and database included but the frontend still being a 'monolith'.
+[source](https://micro-frontends.org/)
+
+# Single Page Web App
+
+A webpage that dynamically rewrites the current page with content based on user 
+interaction or similar. This is opposed to the traditional way, where the page
+loads in another page from the server on user interaction.
+
+This results in smoother transitions where not the entire page has to be rerendered 
+on an interaction but only the parts that change. This means a sidebar will remain
+in place and not be reloaded over the access time of a user. This reduces loading
+times and annoying flickering.
+
+All the necessary data is either retrieved with a single page load - e.g. a bundle
+or multiple bundles that get loaded at the outset. Or data is dynamically loaded in 
+as needed, as stated above.
+
+Take as an example the object-finder that I built.
+[source](https://en.wikipedia.org/wiki/Single-page_application)
+
+# Solution Stacks
+
+Are the technologies often used to achieve a certain goal.
+E.g. XAMP, MERN, MEAN, LAMP, etc.
 
 Backlink: [Software Architecture](230314-1017-software_architecture)
 ---
