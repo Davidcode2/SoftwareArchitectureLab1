@@ -149,5 +149,16 @@ which I then used to scaffold an express app.
 Then ran `npm install` to install the dependencies.
 Started the backend with `npm start`.
 
+## Express render and send
+
+learned about how express can send a response via app.send() and render a page
+with app.render()
+
+### automatic reloading of express app
+
+I got annoyed by manually restarting the express app after every change
+So I installed `nodemon`.
+While working on the express 
+
 
 Backlink: [Software Architecture](230314-1017-software_architecture) ---
