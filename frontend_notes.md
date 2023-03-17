@@ -160,5 +160,8 @@ I got annoyed by manually restarting the express app after every change
 So I installed `nodemon`.
 While working on the express 
 
+Added routes to express app.
+Both jade rendered pages and REST endpoints.
+
 
 Backlink: [Software Architecture](230314-1017-software_architecture) ---

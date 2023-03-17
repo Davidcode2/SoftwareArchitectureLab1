@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
     if (err) {
       res.status(404).send('Not Found');
     }
-    res.send(data);
+    res.send({ data });
   },);
 });
 
