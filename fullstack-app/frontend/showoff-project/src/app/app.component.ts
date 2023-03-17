@@ -29,8 +29,8 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.request().subscribe(res => {
-      let text = JSON.stringify(res);
+    this.request().subscribe((res: any) => {
+      let text = JSON.stringify(res.data);
       this.data = text.split('\\n');
     });
   }
