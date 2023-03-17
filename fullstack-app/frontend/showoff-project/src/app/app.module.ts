@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
+import { WeatherComponent } from './weather/weather.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, WeatherComponent],
   imports: [BrowserModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

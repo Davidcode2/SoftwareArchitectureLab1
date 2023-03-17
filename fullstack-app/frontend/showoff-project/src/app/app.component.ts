@@ -12,8 +12,17 @@ export class AppComponent implements OnInit {
   title = 'showoff-project';
   url = 'http://localhost:3000/labNotes';
   data: string[] = [''];
+  weather: boolean = false;
 
   constructor(private http: HttpClient) { }
+
+  toggleWeather() {
+    if (this.weather) {
+      this.weather = false;
+    } else {
+      this.weather = true;
+    }
+  }
 
   request() {
     return this.http.get(this.url);
@@ -23,7 +32,6 @@ export class AppComponent implements OnInit {
     this.request().subscribe(res => {
       let text = JSON.stringify(res);
       this.data = text.split('\\n');
-      console.log(this.data);
     });
   }
 }

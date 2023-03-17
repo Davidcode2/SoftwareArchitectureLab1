@@ -1,4 +1,13 @@
 <h1>Lab 1</h1>
-<div *ngFor="let line of data">
-  <div>{{line}}</div>
+<div class="flex">
+  <button (click)="toggleWeather()">Notes</button>
+  <button (click)="toggleWeather()">Weather</button>
+</div>
+<div *ngIf="weather">
+  <app-weather></app-weather>
+</div>
+<div *ngIf="!weather">
+  <div *ngFor="let line of data">
+    <div>{{ line }}</div>
+  </div>
 </div>

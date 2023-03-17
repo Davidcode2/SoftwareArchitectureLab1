@@ -1,0 +1,11 @@
+.flex {
+  display: flex;
+  gap: 25px;
+}
+
+button {
+  margin-bottom: 20px;
+  padding: 10px 50px;
+  background-color: darkblue;
+  color: silver;
+}
